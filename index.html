@@ -20,10 +20,10 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-6" id="first-col">
-                        <form>
+                        <form class="numbers">
                             <label for="bill">Bill</label>
                             <br>
-                            <input type="number" name="bill" id="total-bill" placeholder="$" min="0">
+                            <input type="text" name="bill" id="total-bill" placeholder="$" min="0">
                         </form>
                         <br>
                         <div id="tip-percent">
@@ -31,41 +31,40 @@
                             <div>
                                 <div class="row" >
                                     <div class="col-md-4">
-                                        <button class="tips" value="5">5%</button>
+                                        <button class="tips" value="5" type="button" onclick="getTip(this)">5%</button>
                                     </div>
                                     <div class="col-md-4">
-                                        <button class="tips" value="10">10%</button>
+                                        <button class="tips" value="10" onclick="getTip(this)">10%</button>
                                     </div>
                                     <div class="col-md-4">
-                                        <button class="tips" value="15">15%</button>
+                                        <button class="tips" value="15" onclick="getTip(this)">15%</button>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <button class="tips" value="25">25%</button>
+                                        <button class="tips" value="25" onclick="getTip(this)">25%</button>
                                     </div>
                                     <div class="col-md-4">
-                                        <button class="tips" value="50">50%</button>
+                                        <button class="tips" value="50" onclick="getTip(this)">50%</button>
                                     </div>
                                     <div class="col-md-4">
-                                        <input id="custom-input" name="custom-input" placeholder="Custom">
+                                        <input id="custom-input" class="tips" name="custom-input" type="text" placeholder="Custom" onclick="getTip(this)">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <form class="numbers">
                             <label for="number-of-people">Number of People</label>
-                            <input id="num-of-people" name="number-of-people" min="0">
+                            <input id="num-of-people" name="number-of-people" min="0" required=True type="text">
                         </form>
                     </div>
                     <div class="col-md-6" id="second-col">
                         <p><strong class="str">Tip Amount</strong><br>/person<span id="amount-per-person"></span></p>
                         <p><strong class="str">Total</strong><br>/person<span id="total-per-person"></span></p>
 
-                        <button type="button" class="btn btn-block" id="reset-button">RESET</button>
+                        <!-- <input type="reset" class="btn btn-block" id="reset-button" value="RESET"> -->
 
-                        <!-- <button id="reset-button" type="button" class="btn btn-block btn-lg">RESET</button> -->
-
+                        <button type="reset" class="btn btn-block" id="reset-button">RESET</button>
                     </div>
                 </div>
             </div>
