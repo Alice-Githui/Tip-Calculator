@@ -23,7 +23,7 @@
                         <form>
                             <label for="bill">Bill</label>
                             <br>
-                            <input type="number" name="bill" id="total-bill" placeholder="$">
+                            <input type="number" name="bill" id="total-bill" placeholder="$" min="0">
                         </form>
                         <br>
                         <div id="tip-percent">
@@ -53,9 +53,9 @@
                                 </div>
                             </div>
                         </div>
-                        <form>
+                        <form class="numbers">
                             <label for="number-of-people">Number of People</label>
-                            <input id="num-of-people" name="number-of-people">
+                            <input id="num-of-people" name="number-of-people" min="0">
                         </form>
                     </div>
                     <div class="col-md-6" id="second-col">
