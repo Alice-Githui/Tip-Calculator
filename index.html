@@ -1,24 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
     <title>TIP CALCULATOR</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row" id="tip-calculator">
             <div class="title">
                 <h3>SPLI</h3>
                 <h3>TTER</h3>
             </div>
+            <div id="content">
+                <div class="row">
+                    <div class="col-md-6" id="first-col">
+
+                        <form>
+                            <label for="bill">Bill</label>
+                            <br>
+                            <input type="number" name="bill" id="total-bill" placeholder="$">
+                        </form>
+                        <div id="tip-percent">
+                            <p>Select Tip %</p>
+                            <div>
+                                <div class="row" class="tips">
+                                    <div class="col-md-4">
+                                        <button>5%</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button>10%</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button>15%</button>
+                                    </div>
+                                </div>
+                                <div class="row" class="tips">
+                                    <div class="col-md-4">
+                                        <button>25%</button>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button>50%</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input id="custom-input" name="custom-input" placeholder="Custom">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <label for="number-of-people">Number of People</label>
+                            <input id="num-of-people" name="number-of-people">
+                        </form>
+                    </div>
+                    <div class="col-md-6" id="second-col">
+                        <p>Tip Amount/person<span id="amount-per-person"></span></p>
+                        <p>Total/person<span id="total-per-person"></span></p>
+
+                        <input value="RESET" id="reset-button" type="button" class="btn btn-block btn-lg">
+
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
-    
+
     <script src="JS/script.js"></script>
 </body>
+
 </html>
