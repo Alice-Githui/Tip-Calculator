@@ -27,25 +27,25 @@
                         </form>
                         <br>
                         <div id="tip-percent">
-                            <p>Select Tip %</p>
+                            <p id="select-tip">Select Tip %</p>
                             <div>
-                                <div class="row" class="tips">
+                                <div class="row" >
                                     <div class="col-md-4">
-                                        <input value="5%">
+                                        <button class="tips" value="5">5%</button>
                                     </div>
                                     <div class="col-md-4">
-                                        <input value="10%">
+                                        <button class="tips" value="10">10%</button>
                                     </div>
                                     <div class="col-md-4">
-                                        <input value="15%">
+                                        <button class="tips" value="15">15%</button>
                                     </div>
                                 </div>
-                                <div class="row" class="tips">
+                                <div class="row">
                                     <div class="col-md-4">
-                                        <input value="25%"> 
+                                        <button class="tips" value="25">25%</button>
                                     </div>
                                     <div class="col-md-4">
-                                        <input value="50%">
+                                        <button class="tips" value="50">50%</button>
                                     </div>
                                     <div class="col-md-4">
                                         <input id="custom-input" name="custom-input" placeholder="Custom">
@@ -59,10 +59,12 @@
                         </form>
                     </div>
                     <div class="col-md-6" id="second-col">
-                        <p>Tip Amount/person<span id="amount-per-person"></span></p>
-                        <p>Total/person<span id="total-per-person"></span></p>
+                        <p><strong class="str">Tip Amount</strong><br>/person<span id="amount-per-person"></span></p>
+                        <p><strong class="str">Total</strong><br>/person<span id="total-per-person"></span></p>
 
-                        <input value="RESET" id="reset-button" type="button" class="btn btn-block btn-lg">
+                        <button type="button" class="btn btn-block" id="reset-button">RESET</button>
+
+                        <!-- <button id="reset-button" type="button" class="btn btn-block btn-lg">RESET</button> -->
 
                     </div>
                 </div>
