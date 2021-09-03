@@ -20,8 +20,10 @@ body{
     height: 100vh;
 }
 
-.title img{
-    margin-bottom: 80px;
+.title{
+    bottom: 60px;
+    position: relative;
+    left: 250px;
 }
 
 .tips{
