@@ -3,6 +3,7 @@ const tipPercent=document.querySelectorAll('.tips');
 const numOfPeople=document.getElementById("num-of-people");
 let amountPerPerson=document.getElementById("amount-per-person");
 let totalPerPerson=document.getElementById("total-per-person")
+let reset=document.getElementById("reset-button")
 
 let bill=parseInt(totalBill.value);
 let tip=parseInt(tipPercent.value);
@@ -42,3 +43,11 @@ numOfPeople.addEventListener("change", function(event){
 
     getTotalCost()
 })
+
+function resetApp(){
+    document.getElementById("total-bill").value=0;
+    document.querySelectorAll('.tips').value=0;
+    document.getElementById("num-of-people").value=0;       
+    totalPerPerson.innerHTML="$0";
+    amountPerPerson.innerHTML="$0"
+}
