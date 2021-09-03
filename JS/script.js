@@ -5,21 +5,22 @@ let amountPerPerson=document.getElementById("amount-per-person");
 let totalPerPerson=document.getElementById("total-per-person")
 let reset=document.getElementById("reset-button")
 
-let bill=parseInt(totalBill.value);
+let bill=parseFloat(totalBill.value);
 let tip=parseInt(tipPercent.value);
 let number=parseInt(numOfPeople.value);
 
 console.log(tipPercent)
 function getTotalCost(){
 
-    totalPerPerson.innerHTML= "$" +(((1+tip)*bill)/number).toFixed(2)
+    total=(((1+tip)*bill)/number).toFixed(2)
+    totalPerPerson.innerHTML= "$" + total
     amountPerPerson.innerHTML= "$" + ((tip * bill)/number).toFixed(2)
 }
 
 totalBill.addEventListener("change", function(event){
     event.preventDefault()
 
-    bill=parseInt(event.target.value)
+    bill=parseFloat(event.target.value)
     // bill.toFixed(2)
     console.log(bill)
 
