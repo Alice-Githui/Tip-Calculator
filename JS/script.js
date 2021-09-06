@@ -13,7 +13,13 @@ console.log(tipPercent)
 function getTotalCost(){
 
     total=(((1+tip)*bill)/number).toFixed(2)
-    totalPerPerson.innerHTML= "$" + total
+    if (isNaN(total)=== true){
+        return "$0.00"
+    }
+    else{
+        totalPerPerson.innerHTML= "$" + total
+    }
+    
     amountPerPerson.innerHTML= "$" + ((tip * bill)/number).toFixed(2)
 }
 
