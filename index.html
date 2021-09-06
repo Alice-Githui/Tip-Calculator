@@ -23,7 +23,7 @@
                         <form class="numbers">
                             <label for="bill">Bill</label>
                             <br>
-                            <input type="text" name="bill" id="total-bill" placeholder="$" min="0.00">
+                            <input type="number" name="bill" id="total-bill" placeholder="$0" min="0" oninput="this.value = Math.abs(this.value)">
                         </form>
                         <br>
                         <div id="tip-percent">
@@ -55,12 +55,12 @@
                         </div>
                         <form class="numbers">
                             <label for="number-of-people">Number of People</label>
-                            <input id="num-of-people" name="number-of-people" min="0" required=True type="text">
+                            <input id="num-of-people" name="number-of-people" min="0" required=True type="number" oninput="this.value = Math.abs(this.value)">
                         </form>
                     </div>
                     <div class="col-md-6" id="second-col">
-                        <p><strong class="str">Tip Amount</strong><br>/person<span id="amount-per-person"></span></p>
-                        <p><strong class="str">Total</strong><br>/person<span id="total-per-person"></span></p>
+                        <p><strong class="str">Tip Amount</strong><br>/person<span id="amount-per-person">$0.00</span></p>
+                        <p><strong class="str">Total</strong><br>/person<span id="total-per-person">$0.00</span></p>
 
                         <!-- <input type="reset" class="btn btn-block" id="reset-button" value="RESET"> -->
 

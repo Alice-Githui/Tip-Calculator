@@ -18,10 +18,9 @@ function getTotalCost(){
 }
 
 totalBill.addEventListener("change", function(event){
-    event.preventDefault()
 
     bill=parseFloat(event.target.value)
-    // bill.toFixed(2)
+
     console.log(bill)
 
     getTotalCost()
