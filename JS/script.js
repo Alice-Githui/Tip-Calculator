@@ -49,6 +49,6 @@ function resetApp(){
     document.getElementById("total-bill").value=0;
     document.querySelectorAll('.tips').value=0;
     document.getElementById("num-of-people").value=0;       
-    totalPerPerson.innerHTML="$0";
-    amountPerPerson.innerHTML="$0"
+    totalPerPerson.innerHTML="$0.00";
+    amountPerPerson.innerHTML="$0.00"
 }
