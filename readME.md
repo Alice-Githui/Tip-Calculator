@@ -78,7 +78,7 @@ When creating this project, I struggled with responsiveness of the application t
 ### Useful resources
 
 - [How to only enter positive integers on form inputs](https://stackoverflow.com/questions/31575496/prevent-negative-inputs-in-form-input-type-number) - This helped me for figure out how to ensure that the form amounts were only positive values. I would recommend this resource to anyone looking to incorporate this concept.
-
+-[How to check if an integer is negative in value in Javascript](https://flaviocopes.com/how-to-check-value-is-number-javascript/) - This helped me know how to use isNaN() method to check if a value is not a number when giving output. I was able to create an if statement that shows consistent output at $0.00 until all values are entered into the app
 
 ## Author
 
