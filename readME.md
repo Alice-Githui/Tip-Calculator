@@ -82,7 +82,7 @@ When creating this project, I struggled with responsiveness of the application t
 
 ## Author
 
-- Website - [Tip Calculator](https://www.your-site.com)
+- Website - [Tip Calculator](https://alice-githui.github.io/Tip-Calculator/)
 - Frontend Mentor - [Alice Githui](https://www.frontendmentor.io/profile/Alice-Githui)
 
 
